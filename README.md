@@ -1,3 +1,3 @@
-Smart Contracts Repo
+### Smart Contracts Repo
 
 A dump to add smart contracts.
