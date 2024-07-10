@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.8; //pragma solidity >=^0.8.7 <0.9.0 OR pragma solidity ^0.8.7
+pragma solidity 0.8.8; //pragma solidity >=^0.8.7 <0.9.0 OR pragma solidity ^0.8.7 -> only changes minor version
 
 // EVM -> Ethereum Virtual Machine
 // code when compiled compiles down to EVM standards
@@ -36,7 +36,7 @@ contract SimpleStorage {
 
     uint256 public favNum; // defaults to 0
 
-    function store (uint256 _favNum) public {
+    function store (uint256 _favNum) public virtual {
         favNum = _favNum;
         // view function retrieve called here like retrieve() will cost gas
         // retrieve();
