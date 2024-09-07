@@ -509,10 +509,10 @@ error PriceMustBeAboveZero();
 // error IsNotOwner()
 
 contract NftMarketplace is ReentrancyGuard {
-    // struct Listing {
-    //     uint256 price;
-    //     address seller;
-    // }
+    struct Listing {
+        uint256 price;
+        address seller;
+    }
 
     event ItemListed(
         address indexed seller,
